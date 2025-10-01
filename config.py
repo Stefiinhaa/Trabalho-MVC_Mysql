@@ -1,0 +1,9 @@
+DEBUG = True
+
+USERNAME = 'root'
+PASSWORD ='alunos'
+SERVER = 'localhost:3307'
+DB ='library'
+
+SQLALCHEMY_DATABASE_URI= f'mysql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}'
+SQLALCHEMY_TRACK_MODIFICATIONS=False
