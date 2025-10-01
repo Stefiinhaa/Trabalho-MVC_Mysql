@@ -1,0 +1,1167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b23a27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    color: white;
+    z-index: 10;
+}
+
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.navbar-center {
+  gap: 128px;
+  padding: 5px;
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  color: #231f204c;
+  margin-right: 52px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.currency {
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.up-icon {
+  color: limegreen;
+  font-size: 18px;
+}
+
+.navbar-right i {
+  font-size: 20px;
+}
+
+.fa-chevron-down:before {
+  content: "\f078";
+  margin-right: 20px;
+}
+
+.temp {
+  font-size: 18px;
+}
+
+.text-side {
+  flex: 1;
+  padding: 60px;
+  color: #333;
+  margin-top: -475px;
+  margin-left: 20px;
+}
+
+.nomecafe{
+  font-size: 2em;
+  border-top: 2px solid #7d3c1f;
+  border-bottom: 2px solid #7d3c1f;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-family: Garamond;
+  margin-top: 52px;
+  margin-left: 61px;
+}
+
+
+.arabica{
+  width: 281px;
+  margin-top: 269px;
+  margin-left: -373px;
+  margin-right: 0px;
+  float: inline-start;
+}
+
+
+
+
+.Primeirasessao{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+.Pacote{
+  width: 40%;
+  margin-left: 30px;
+  margin-top: -23px;
+}
+
+.sessao{
+  margin-top: -36px;
+  margin-right: 23px;
+}
+.Logo{
+  width: 50%;
+  margin-left: 106px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.texto1{
+  font-family: Garamond;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: -58px;
+  color: white;
+  line-height: 1.0;
+  
+}
+
+.cor{
+color: #0cc0df;
+}
+
+.frase{
+font-family: "poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+margin-left: -79px;
+}
+
+.cafe{
+  height: 50%;
+ 
+}
+
+
+
+.services-section {
+  padding: 40px;
+  background-color: #f9f5e7;
+}
+
+.services-section h2 {
+  font-family: Garamond;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 40px;
+  border-bottom: solid 2.5px #883a1b;
+  border-top: solid 2.5px #883a1b;
+  padding: 2px;
+  text-align: center;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 55px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.floating-icon  {
+  width: 40px;
+  height: 40px;
+  background-color: #5ce1e6; 
+  border-radius: 430px;
+  margin-bottom: 20px;
+  padding-inline-start: 80%;
+  margin-right: 36px;
+  float: right;
+}
+
+.floating-icon img  {
+ width: 40px;
+ height: 40px;
+ position: relative;
+ float: right;
+ margin-right: 96px;
+ margin-top: -1.5px;
+ margin-bottom: 1.5px;
+}
+
+/* Estilo para a imagem principal do carrossel (se IMG/Carrosel.png não tiver os mesmos textos) */
+/* .Carossel img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+/* } */
+
+
+/* Contêiner principal do carrossel */
+.carousel-container {
+  max-width: 1600px; /* Largura máxima do carrossel */
+  height: 509px; /* Altura fixa para o carrossel */
+  margin: 47px auto; /* Centraliza e adiciona margem superior */
+  border-radius: 15px; /* Bordas arredondadas para um visual moderno */
+  overflow: hidden; /* Garante que as imagens e conteúdo não escapem das bordas arredondadas */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada e profissional */
+}
+
+/* Estilo para todas as imagens dentro dos slides do carrossel */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ESSENCIAL: Preenche o espaço sem distorcer, cortando as partes extras. */
+  /* Se o texto estiver nas imagens, 'cover' pode cortar parte dele.
+     Se quiser garantir que o texto seja sempre visível, considere 'contain'
+     e adicione um background-color ao .carousel-item. Ex:
+     object-fit: contain;
+     background-color: #333; /* Cor de fundo para as bordas que aparecerem */
+  
+}
+
+/* Estilos para os indicadores (as "bolinhas") */
+.carousel-indicators {
+  bottom: 20px; /* Posiciona as bolinhas mais acima do rodapé do carrossel */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff; /* Cor das bolinhas: branco para contraste */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Borda sutil para definir as bolinhas */
+  border-radius: 50%; /* Faz com que sejam perfeitamente redondas */
+  width: 12px; /* Largura um pouco maior para melhor visibilidade */
+  height: 12px; /* Altura um pouco maior */
+  opacity: 0.6; /* Opacidade padrão para as bolinhas inativas */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+.carousel-indicators .active {
+  background-color: #007bff; /* Cor da bolinha ativa: azul primário do Bootstrap */
+  opacity: 1; /* Totalmente visível quando ativa */
+  transform: scale(1.2); /* Ligeiro aumento no tamanho da bolinha ativa */
+}
+
+/* Estilos para os botões de navegação (setas) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%; /* Aumenta a área clicável dos botões */
+  opacity: 0.8; /* Torna as setas mais visíveis */
+  transition: opacity 0.3s ease; /* Transição suave na opacidade */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 3rem; /* Tamanho maior para os ícones */
+  height: 3rem; /* Tamanho maior para os ícones */
+  background-repeat: no-repeat;
+  background-position: center; /* Centraliza o ícone */
+  background-size: 100% 100%; /* Garante que o ícone preencha o espaço */
+  /* Removi todas as margens problemáticas aqui */
+  margin: 0;
+  /* Adicionei uma sombra para o ícone para se destacar mais */
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.7));
+}
+
+/* Os estilos abaixo não são diretamente relacionados ao carrossel, mas os mantive. */
+.service-card h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-left: 65px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+.Comercialização {
+  text-align: center;
+  margin-right: 93px;
+}
+
+.Degustação {
+  text-align: center;
+  margin-right: 80px;
+}
+
+.Classificação {
+  text-align: center;
+  margin-right: 80px;
+}
+
+
+.Sobre h2 {
+  font-family: Garamond;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  border-bottom: 2.5px solid #883a1b;
+  border-top: solid 2.5px #883a1b;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 8%; /* Espaço entre o card e o h3 */
+  padding: 20px;
+  margin-left:30px ;
+}
+
+.left-card {
+  width: 350px; /* Aumenta o tamanho do card */
+  height: 400px; /* Definindo uma altura fixa */
+  border-radius: 8px; /* Torna os cantos arredondados */
+  margin-top: 20px;
+  background-color: #d8d8c5;
+  overflow: hidden; /* Garante que a imagem dentro do card não saia do seu contorno */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%; /* Faz a imagem ocupar toda a altura do card */
+  object-fit: cover; /* Faz com que a imagem se ajuste sem distorcer */
+}
+
+h3 {
+  font-family: Garamond;
+  font-size: 28px;
+  margin-bottom: 20px; /* Reduz o espaço abaixo do título */
+  text-align: center;
+}
+
+.cor2 {
+  color: #ba391c;
+}
+
+.text-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+.Container2 h2 {
+  font-family: Garamond;
+  font-size: 40px;
+  color: #ba391c;
+  text-align: center;
+  border-bottom: 2.5px solid #883a1b;
+  border-top: solid 2.5px #883a1b;
+}
+.Container2 {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f5e7;
+}
+
+.principio-bloco {
+  display: flex;
+  flex-direction: row; /* lado a lado */
+  justify-content: center;
+  flex-wrap: wrap; /* quebra linha se a tela for pequena */
+    gap: 115px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 275px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.politica {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.number-h1 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #e57e25;
+  margin: 5px 0;
+}
+
+.principio-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 9px;
+    margin-top: 17px;
+}
+
+.principio-lista {
+  text-align: left;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #333;
+}
+
+
+.principio-texto {
+  text-align: justify;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container3 {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 8%; /* Espaço entre texto e o card */
+  padding: 20px;
+  margin: 0; /* Remove o empurrão para a direita */
+}
+
+.text-content2 {
+  max-width: 600px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  
+}
+.text-content2, p {
+text-align: center;
+  
+}
+
+.Conheça {
+  font-family: Garamond;
+  font-size: 40px;
+  color: #ba391c;
+  margin-bottom: 40px;
+}
+
+
+
+.Estabelecimento {
+  padding: 40px;
+  background-color: #f9f5e7;
+}
+
+.Estabelecimento h2 {
+  font-family: Garamond;
+  font-size: 40px;
+  color: #ba391c;
+  text-align: center;
+  border-bottom: 2.5px solid #883a1b;
+  border-top: solid 2.5px #883a1b;
+}
+
+.Local{
+  width: 70%;
+  height: 70%;
+  margin-left: 75px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.Colaboradores {
+  padding: 40px;
+  background-color: #f9f5e7;
+}
+
+.Colaboradores {
+  padding: 40px;
+  background-color: #f9f5e7;
+}
+
+.Colaboradores h2 {
+  font-family: Garamond;
+  font-size: 36px;
+  color: #ba391c;
+  text-align: center;
+  border-bottom: 2.5px solid #883a1b;
+  border-top: solid 2.5px #883a1b;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.container-caixas {
+  display: flex;
+  justify-content: space-evenly; /* Garante que os cards fiquem igualmente espaçados */
+  gap: 20px; /* Reduzi o espaço entre os cards */
+  flex-wrap: nowrap; /* Impede que os cards quebrem para a linha de baixo */
+}
+
+.contorno {
+     MARGIN-RIGHT: 4PX;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 102%;
+
+}
+
+.caixa {
+  width: 300px;
+  height: 460px; /* Mantém a altura conforme você havia definido */
+  background-color: #d8d8c5;
+  border-radius: 16px;
+  border: 2px solid #8b4513;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aspas {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+
+.complemento {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  MARGIN-RIGHT: 20PX;
+}
+
+.jorge1 {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 84px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.jorge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 87px;
+  margin-top: 15px;
+}
+
+.nome {
+  font-family: Garamond;
+  font-size: 23px;
+  font-weight: bold;
+  color: #ba391c;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nome2 {
+  font-family: Garamond;
+  font-size: 23px;
+  font-weight: bold;
+  color: #ba391c;
+  text-align: center;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.nome3 {
+  font-family: Garamond;
+  font-size: 23px;
+  font-weight: bold;
+  color: #ba391c;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.user {
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+  margin-left: 98px;
+  margin-top: 34px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.containers {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f5e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-family: Garamond, serif;
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Ocean {
+  width: 230px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 408px;
+  height: 270px;
+}
+
+.trator, .cortador {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  position: absolute;
+  margin-top: 100px;
+}
+
+.trator {
+  left: 0;
+  bottom: -100px; /* antes era 0 ou algum valor acima */
+  z-index: 1;
+}
+
+.cortador {
+  left: 150px;
+  bottom: -12px; /* ajustado para descer um pouco */
+  z-index: 2;
+}
+
+
+.trator:hover, .cortador:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  width: 400px;
+  background-color: #f9f5e7;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-left: 80px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #8b5e3c;
+  margin: 10px 0;
+}
+
+.button-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.anuncie-btn {
+
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 19px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: -4px;
+  cursor: pointer;
+  transition: 0.3sease;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-left: 55px;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-right: 55px;
+      background-color: #ba391c;
+}
+
+.text{
+  margin-bottom: 0rem;
+}
+.anuncie-btn, a{
+  margin-left: 26px;
+}
+
+.anuncie-btn,p{
+  margin-left: 17px;
+  
+}
+
+
+.icon {
+  width: 49px;
+  margin-left: 11px;
+
+}
+
+.icon2 {
+  width: 49px;
+    margin-left: 11px;
+    margin-right: 10px;
+
+}
+
+.fundo-inclinado {
+  position: relative;
+  background-color: #f9f5e7;
+  height: 600px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 50px;
+}
+
+.coffe{
+width: 26%;
+margin-left: 120px;
+margin-top: 134px;
+}
+
+.Quadrado{
+    background-color: #d8d8c5;
+    width: 412px;
+    height: 456px;
+    margin-left: 218px;
+    margin-top: 32px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .login{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+  }
+
+  .email, .senha{
+    width: 370px;
+    height: 35px;
+    border-radius: 14px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .btn-entrar{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    width: 370px;
+    height: 35px;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .register{
+    text-align: center;
+    font-size: 14px;
+    margin-top:26px;
+  }
+
+  .register a{
+    color: #000000;
+    text-decoration: underline;
+    text-decoration: none;
+    margin-top: 35px;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+  .link{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+  }
+
+  .label{
+    margin-right: 8px;
+  }
+
+  .entrar{
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+  }
+
+  .check{
+    width: 35px;
+  }
+
+  
+  .Quadrado2{
+    background-color: #d8d8c5;
+    width: 412px;
+    height: 456px;
+    margin-left: 218px;
+    margin-top: 32px;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .form-cadastro2{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .btn-entrar2{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    width: 370px;
+    height: 35px;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .link2{
+    text-decoration: none;
+    color: #000;
+  }
+
+.Cadastro{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-field{
+    width: 370px;
+    height: 35px;
+    border-radius: 14px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .btn-entrar {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    width: 370px;
+    height: 35px;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.containe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    gap: 161px;
+    background-color: #f9f8df;
+    margin-top: 37px;
+}
+
+.imagem-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-box {
+    width: 220px;
+    height: 180px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.upload-box img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.texto-aviso {
+    font-weight: bold;
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-section input {
+    width: 400px;
+    padding: 18px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.button-container2 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.publicar-btn {
+  background-color: #ba391c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 19px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: -4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-left: 51px;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-right: 47px;
+      width: 229px;
+}
+
+.publicar-btn:hover {
+  background-color: #8b4b3d;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1130px;
+  margin: auto;
+}
+
+.footer-logo {
+  width: 137px;
+  margin-bottom: 10px;
+  margin-left: 41px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 80px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+.txt{
+  font-size: 18px;
+    margin-left: 23px;
+}
+
+.txt2{
+  
+    margin-left: 102px;
+}
+.nwe{
+  margin-left: -19px;
+}
+
+.txt1{
+  font-size: 18px;
+  margin-left: 138px;
+  margin-bottom: 28px;
+}
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+ padding: 15px 17px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff0018; /* cor do botão, pode mudar */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 1000;
+}
+#btnTopo:hover {
+  opacity: 1;
+}
+.up{
+
+  width: 20px;
+  margin-top: -5px;
+  margin-left: -2px;
+
+}
+
+.novo{
+  width: 64px;
+  height: 64px;
+}
+
+.cocatrel{
+  width: 33px;
+  margin-left: -11px;
+  margin-bottom: 2px;
+}
